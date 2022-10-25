@@ -1,0 +1,27 @@
+{
+	"name": "@dipsaus9/test-button",
+	"version": "1.0.0",
+	"author": "dipsaus",
+	"description": "Button component",
+	"main": "dist/button.js",
+	"module": "dist/button.js",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dipsaus9/monorepo-test-setup.git"
+	},
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"build:watch": "vite build --watch",
+		"lint": "eslint ./src",
+		"lint:fix": "eslint ./src --fix"
+	},
+	"types": "src/main.ts",
+	"bugs": {
+		"url": "git+https://github.com/dipsaus9/monorepo-test-setup/issues"
+	},
+	"peerDependencies": {
+		"react": ">=18.0.0"
+	}
+}
