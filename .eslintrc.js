@@ -159,15 +159,22 @@ module.exports = {
       },
     },
     {
-      files: ["vite.config.ts", "postcss.config.cjs"],
+      files: [
+        "vite.config.ts",
+        "viteBaseConfig.ts",
+        "**/*/vite.config.ts",
+        "postcss.config.cjs",
+        "**/*/postcss.config.cjs",
+      ],
       parserOptions: {
         project: "tsconfig.node.json",
-        tsconfigRootDir: __dirname
+        tsconfigRootDir: __dirname,
       },
       env: {
         node: true,
       },
       rules: {
+        "import/no-extraneous-dependencies": "off",
         "import/no-relative-packages": "off",
         "sort-imports": "off",
         "no-undef": "off",

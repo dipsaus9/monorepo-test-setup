@@ -1,0 +1,35 @@
+{
+  "name": "@dipsaus9/title",
+  "version": "1.0.0",
+  "author": "dipsaus",
+  "description": "Title component",
+  "main": "dist/title.js",
+  "module": "dist/title.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipsaus9/monorepo-test-setup.git"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "build:watch": "vite build --watch",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "test": "tsc"
+  },
+  "types": "src/main.ts",
+  "bugs": {
+    "url": "git+https://github.com/dipsaus9/monorepo-test-setup/issues"
+  },
+  "dependencies": {
+    "@dipsaus9/button": "workspace:*"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.1",
+    "postcss": "^8.4.18"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0"
+  }
+}
