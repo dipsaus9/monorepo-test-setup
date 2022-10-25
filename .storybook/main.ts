@@ -8,5 +8,5 @@ module.exports = {
     buildStoriesJson: true,
   },
   core: { builder: "@storybook/builder-vite" },
-  stories: ["../packages/**/*.stories.@(js|jsx|ts|tsx)"],
+  stories: ["../components/**/*.stories.@(js|jsx|ts|tsx)"],
 }

@@ -99,7 +99,7 @@ importers:
       vite: 3.1.8
       webpack: 5.74.0
 
-  packages/button:
+  components/button:
     specifiers:
       postcss: ^8.4.18
       tailwindcss: ^3.2.1

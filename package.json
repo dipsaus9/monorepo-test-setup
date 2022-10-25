@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "pnpm storybook",
-    "build": "pnpm -r --filter='./packages/*' run build",
-    "build:watch": "pnpm -r --filter='./packages/*' run build:watch",
-    "lint": "pnpm -r --filter='./packages/*' run lint",
-    "lint:fix": "pnpm -r --filter='./packages/*' run lint:fix",
-    "test": "pnpm -r --filter='./packages/*' run test",
+    "build": "pnpm -r --filter='./components/*' run build",
+    "build:watch": "pnpm -r --filter='./components/*' run build:watch",
+    "lint": "pnpm -r --filter='./components/*' run lint",
+    "lint:fix": "pnpm -r --filter='./components/*' run lint:fix",
+    "test": "pnpm -r --filter='./components/*' run test",
     "storybook": "start-storybook -p 6006 -s public",
     "cy:open": "cypress open --component",
     "cy:run": "cypress run --component",
@@ -17,7 +17,7 @@
   "license": "MIT",
   "workspaces": {
     "packages": [
-      "packages/*"
+      "components/*"
     ]
   },
   "dependencies": {
