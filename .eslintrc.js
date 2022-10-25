@@ -159,13 +159,11 @@ module.exports = {
       },
     },
     {
-      files: ["packages/kiosk-util/**/*"],
-      env: {
-        webextensions: true,
+      files: ["vite.config.ts", "postcss.config.cjs"],
+      parserOptions: {
+        project: "tsconfig.node.json",
+        tsconfigRootDir: __dirname
       },
-    },
-    {
-      files: ["viteBaseConfig.ts", "vite.config.ts"],
       env: {
         node: true,
       },
