@@ -1,16 +1,17 @@
 {
-  "name": "@dipsaus9/button",
+  "name": "@dipsaus9/vite-config",
   "version": "1.0.0",
   "author": "dipsaus",
-  "description": "Button component",
-  "main": "dist/button.js",
-  "module": "dist/button.js",
+  "description": "Vite config",
+  "type": "module",
+  "main": "dist/vite-config.js",
+  "module": "dist/vite-config.js",
   "license": "MIT",
+  "types": "src/main.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup.git"
   },
-  "type": "module",
   "scripts": {
     "build": "vite build",
     "build:watch": "vite build --watch",
@@ -18,16 +19,11 @@
     "lint:fix": "eslint ./src --fix",
     "test": "tsc"
   },
-  "types": "src/main.ts",
   "bugs": {
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup/issues"
   },
-  "devDependencies": {
-    "@dipsaus9/vite-config": "*",
-    "tailwindcss": "^3.2.1",
-    "postcss": "^8.4.18"
-  },
   "peerDependencies": {
-    "react": ">=18.0.0"
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "vite": "^3.2.0"
   }
 }

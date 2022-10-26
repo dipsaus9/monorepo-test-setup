@@ -3,7 +3,7 @@ import path from "path"
 import peerDepsExternal from "rollup-plugin-peer-deps-external"
 import { PluginOption, UserConfigExport } from "vite"
 
-export function getBaseViteConfig(dirname: string): UserConfigExport {
+export function getBaseLibraryConfig(dirname: string): UserConfigExport {
   const isExternal = (id: string) => {
     if (id.includes("tailwind")) {
       return false

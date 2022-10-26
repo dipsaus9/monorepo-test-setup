@@ -26,6 +26,7 @@
     "@dipsaus9/button": "*"
   },
   "devDependencies": {
+    "@dipsaus9/vite-config": "*",
     "tailwindcss": "^3.2.1",
     "postcss": "^8.4.18"
   },
