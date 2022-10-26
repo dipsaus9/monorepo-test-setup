@@ -1,11 +1,14 @@
 {
-  "name": "monorepo-test-setup",
+  "name": "test-tailwind",
   "private": true,
   "version": "0.0.1",
+  "repository": "git@github.com:dipsaus9/monorepo-test-setup.git",
+  "author": "dipsaus9",
+  "license": "MIT",
   "scripts": {
     "dev": "yarn run storybook",
     "build": "turbo run build",
-    "build:watch": "turbo run build:watch --parallel --no-cache",
+    "build:watch": "turbo run build:watch --parallel",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "test": "turbo run test",
@@ -15,7 +18,6 @@
     "build-storybook": "build-storybook -o docs-build -s public",
     "preview": "vite preview"
   },
-  "license": "MIT",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -64,6 +66,7 @@
     "node": ">=16.14.0"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ]
 }
