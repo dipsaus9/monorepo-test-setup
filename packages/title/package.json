@@ -23,7 +23,7 @@
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup/issues"
   },
   "dependencies": {
-    "@dipsaus9/button": "workspace:*"
+    "@dipsaus9/button": "*"
   },
   "devDependencies": {
     "tailwindcss": "^3.2.1",
