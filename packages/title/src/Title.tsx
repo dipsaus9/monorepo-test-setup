@@ -8,7 +8,7 @@ export function Title({
 }: AllHTMLAttributes<HTMLHeadElement>) {
   return (
     <div className="drop-shadow-xl" {...props}>
-      <Button className="text-primary">{children}</Button>
+      <Button>{children}</Button>
     </div>
   )
 }

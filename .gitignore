@@ -12,6 +12,7 @@ dist
 dist-ssr
 packages/*/dist
 packages/*/package-lock.json
+.turbo
 *.local
 
 # Editor directories and files
