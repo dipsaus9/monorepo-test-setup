@@ -1,0 +1,18 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "TypeScript": {
+      "buildPath": "./src/",
+      "files": [
+        {
+          "destination": "main.d.ts",
+          "format": "typescript/module-declarations"
+        },
+        {
+          "destination": "main.js",
+          "format": "javascript/module"
+        }
+      ]
+    }
+  }
+}
