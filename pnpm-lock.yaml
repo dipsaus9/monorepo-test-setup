@@ -109,30 +109,7 @@ importers:
       storybook: 7.0.0-alpha.46_yalvw3r2waubxycyb7k7qsruca
       typescript: 4.8.4
 
-  packages/button:
-    specifiers:
-      '@dipsaus9/vite-config': '*'
-      postcss: ^8.4.18
-      tailwindcss: ^3.2.1
-    devDependencies:
-      '@dipsaus9/vite-config': link:../vite-config
-      postcss: 8.4.18
-      tailwindcss: 3.2.1_postcss@8.4.18
-
-  packages/title:
-    specifiers:
-      '@dipsaus9/button': '*'
-      '@dipsaus9/vite-config': '*'
-      postcss: ^8.4.18
-      tailwindcss: ^3.2.1
-    dependencies:
-      '@dipsaus9/button': link:../button
-    devDependencies:
-      '@dipsaus9/vite-config': link:../vite-config
-      postcss: 8.4.18
-      tailwindcss: 3.2.1_postcss@8.4.18
-
-  packages/vite-config:
+  packages/config/vite-config:
     specifiers:
       '@types/rollup-plugin-peer-deps-external': 2.2.1
       rollup-plugin-peer-deps-external: ^2.2.4
@@ -140,6 +117,29 @@ importers:
       rollup-plugin-peer-deps-external: 2.2.4
     devDependencies:
       '@types/rollup-plugin-peer-deps-external': 2.2.1
+
+  packages/ui/button:
+    specifiers:
+      '@dipsaus9/config.vite-config': workspace:*
+      postcss: ^8.4.18
+      tailwindcss: ^3.2.1
+    devDependencies:
+      '@dipsaus9/config.vite-config': link:../../config/vite-config
+      postcss: 8.4.18
+      tailwindcss: 3.2.1_postcss@8.4.18
+
+  packages/ui/title:
+    specifiers:
+      '@dipsaus9/config.vite-config': workspace:*
+      '@dipsaus9/ui.button': workspace:*
+      postcss: ^8.4.18
+      tailwindcss: ^3.2.1
+    dependencies:
+      '@dipsaus9/ui.button': link:../button
+    devDependencies:
+      '@dipsaus9/config.vite-config': link:../../config/vite-config
+      postcss: 8.4.18
+      tailwindcss: 3.2.1_postcss@8.4.18
 
 packages:
 
@@ -3140,7 +3140,7 @@ packages:
   /@types/node-fetch/2.6.2:
     resolution: {integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==}
     dependencies:
-      '@types/node': 16.18.3
+      '@types/node': 18.11.8
       form-data: 3.0.1
     dev: true
 

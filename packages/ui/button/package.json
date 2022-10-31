@@ -1,12 +1,12 @@
 {
-  "name": "@dipsaus9/title",
+  "name": "@dipsaus9/ui.button",
   "version": "1.0.0",
   "author": "dipsaus",
-  "description": "Title component",
+  "description": "Button component",
   "exports": {
-    ".": "./dist/title.js"
+    ".": "./dist/ui.button.js"
   },
-  "types": "src/main.ts",
+  "types": "./src/main.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -23,11 +23,8 @@
   "bugs": {
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup/issues"
   },
-  "dependencies": {
-    "@dipsaus9/button": "*"
-  },
   "devDependencies": {
-    "@dipsaus9/vite-config": "*",
+    "@dipsaus9/config.vite-config": "workspace:*",
     "tailwindcss": "^3.2.1",
     "postcss": "^8.4.18"
   },

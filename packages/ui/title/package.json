@@ -1,18 +1,18 @@
 {
-  "name": "@dipsaus9/vite-config",
+  "name": "@dipsaus9/ui.title",
   "version": "1.0.0",
   "author": "dipsaus",
-  "description": "Vite config",
-  "type": "module",
+  "description": "Title component",
   "exports": {
-    ".": "./dist/vite-config.js"
+    ".": "./dist/ui.title.js"
   },
-  "types": "./src/main.ts",
+  "types": "src/main.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup.git"
   },
+  "type": "module",
   "scripts": {
     "build": "vite build",
     "build:watch": "vite build --watch",
@@ -24,12 +24,14 @@
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup/issues"
   },
   "dependencies": {
-    "rollup-plugin-peer-deps-external": "^2.2.4"
+    "@dipsaus9/ui.button": "workspace:*"
   },
   "devDependencies": {
-    "@types/rollup-plugin-peer-deps-external": "2.2.1"
+    "@dipsaus9/config.vite-config": "workspace:*",
+    "tailwindcss": "^3.2.1",
+    "postcss": "^8.4.18"
   },
   "peerDependencies": {
-    "vite": "^3.2.0"
+    "react": ">=18.0.0"
   }
 }
