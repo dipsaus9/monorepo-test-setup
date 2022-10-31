@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "build:config": "turbo run --filter=@dipsaus9/tailwind-theme build",
+    "build:config": "turbo run --filter=./packages/config/**/* build",
     "build:packages": "turbo run --filter=./packages/**/* build",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",

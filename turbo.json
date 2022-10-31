@@ -7,19 +7,19 @@
     },
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".dist/**"]
+      "inputs": ["src/**/*.tsx", "src/**/*.ts"],
+      "outputs": ["./dist/**"]
+    },
+    "@dipsaus9/docs#build": {
+      "inputs": ["../../packages/**/*.tsx"],
+      "outputs": ["./storybook-static/**"]
     },
     "build:packages": {
       "dependsOn": ["^build"],
       "outputs": [".dist/**"]
     },
-    "@dipsaus9/docs#build": {
-      "inputs": ["../../**/src/**/*.stories.*"],
-      "outputs": ["storybook-static"]
-    },
     "test": {
-      "outputs": [],
-      "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
+      "outputs": []
     },
     "lint": {
       "outputs": []
