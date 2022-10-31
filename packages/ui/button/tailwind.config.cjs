@@ -1,12 +1,12 @@
 /* eslint-disable import/no-unresolved */
 const {
-  Theme: { colors },
+  Theme: { Colors },
 } = require("@dipsaus9/tailwind-theme")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
-    colors,
+    colors: Colors,
   },
   plugins: [],
   corePlugins: {
