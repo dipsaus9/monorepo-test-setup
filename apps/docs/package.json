@@ -8,6 +8,9 @@
     "build": "storybook build",
     "preview": "pnpm dlx http-server ./storybook-static"
   },
+  "dependencies": {
+    "@dipsaus9/tailwind-theme": "workspace:*"
+  },
   "devDependencies": {
     "@babel/core": "^7.19.6",
     "@mdx-js/react": "^2.0.0-rc.2",

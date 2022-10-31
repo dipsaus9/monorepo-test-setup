@@ -1,11 +1,8 @@
+const { Theme } = require("@dipsaus9/tailwind-theme/src/Theme")
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  theme: {
-    colors: {
-      primary: "#FF00FF",
-      secondary: "green",
-    },
-  },
+  theme: Theme,
   plugins: [],
   corePlugins: {
     preflight: false,

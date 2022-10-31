@@ -10,11 +10,7 @@
       "inputs": ["../../**/src/**/*.stories.*"],
       "outputs": ["storybook-static"]
     },
-    "build:watch": {
-      "outputs": [".dist/**"]
-    },
     "test": {
-      "dependsOn": ["build"],
       "outputs": [],
       "inputs": ["src/**/*.tsx", "src/**/*.ts", "test/**/*.ts", "test/**/*.tsx"]
     },

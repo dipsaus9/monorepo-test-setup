@@ -1,12 +1,24 @@
 {
-  "name": "@dipsaus9/ui.title",
+  "name": "@dipsaus9/title",
   "version": "1.0.0",
   "author": "dipsaus",
   "description": "Title component",
+  "main": "./src/main",
+  "types": "src/main",
   "exports": {
-    ".": "./dist/ui.title.js"
+    ".": "./src/main",
+    "./src/*": "./src/*"
   },
-  "types": "src/main.ts",
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./src/main"
+      ],
+      "src/*": [
+        "./src/*"
+      ]
+    }
+  },
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -14,8 +26,6 @@
   },
   "type": "module",
   "scripts": {
-    "build": "vite build",
-    "build:watch": "vite build --watch",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "tsc"
@@ -24,12 +34,13 @@
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup/issues"
   },
   "dependencies": {
-    "@dipsaus9/ui.button": "workspace:*"
-  },
-  "devDependencies": {
-    "@dipsaus9/config.vite-config": "workspace:*",
+    "@dipsaus9/button": "workspace:*",
+    "@dipsaus9/tailwind-theme": "workspace:*",
     "tailwindcss": "^3.2.1",
     "postcss": "^8.4.18"
+  },
+  "devDependencies": {
+    "@storybook/react": "^7.0.0-alpha.43"
   },
   "peerDependencies": {
     "react": ">=18.0.0"

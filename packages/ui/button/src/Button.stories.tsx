@@ -1,6 +1,6 @@
 import type { ComponentProps } from "react"
 
-import type { Meta, Story } from "@storybook/react"
+import type { Meta, StoryFn } from "@storybook/react"
 
 import { Button } from "./Button"
 
@@ -12,7 +12,7 @@ export default {
   },
 } as Meta<ComponentProps<typeof Button>>
 
-const Template: Story<ComponentProps<typeof Button>> = (props) => (
+const Template: StoryFn<ComponentProps<typeof Button>> = (props) => (
   <Button {...props} />
 )
 
