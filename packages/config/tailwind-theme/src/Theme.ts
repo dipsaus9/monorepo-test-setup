@@ -1,6 +1,7 @@
-export const Theme = {
-  colors: {
-    primary: "blue",
-    secondary: "pink",
-  },
+import type { Config } from "tailwindcss"
+
+import { Colors } from "./Colors"
+
+export const Theme: Config["theme"] = {
+  colors: Colors,
 }
