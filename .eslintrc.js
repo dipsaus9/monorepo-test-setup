@@ -138,6 +138,8 @@ module.exports = {
         "**/*/vite.config.ts",
         "**/*/postcss.config.cjs",
         "**/*/tailwind.config.cjs",
+        "tailwind.config.cjs",
+        "test.js"
       ],
       parserOptions: {
         project: "tsconfig.node.json",

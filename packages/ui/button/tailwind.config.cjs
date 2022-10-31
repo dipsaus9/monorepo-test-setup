@@ -1,8 +1,13 @@
-const { Theme } = require("@dipsaus9/tailwind-theme/src/Theme")
+/* eslint-disable import/no-unresolved */
+const {
+  Theme: { colors },
+} = require("@dipsaus9/tailwind-theme")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  theme: Theme,
+  theme: {
+    colors,
+  },
   plugins: [],
   corePlugins: {
     preflight: false,

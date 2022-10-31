@@ -3,20 +3,14 @@
   "version": "1.0.0",
   "author": "dipsaus",
   "description": "Tailwind Theme",
-  "main": "./src/main",
-  "types": "src/main",
+  "type": "module",
+  "main": "./dist/tailwind.theme.umd.cjs",
+  "module": "./dist/tailwind.theme.js",
+  "types": "./src/main.ts",
   "exports": {
-    ".": "./src/main",
-    "./src/*": "./src/*"
-  },
-  "typesVersions": {
-    "*": {
-      ".": [
-        "./src/main"
-      ],
-      "src/*": [
-        "./src/*"
-      ]
+    ".": {
+      "import": "./dist/tailwind-theme.js",
+      "require": "./dist/tailwind-theme.umd.cjs"
     }
   },
   "license": "MIT",
@@ -24,8 +18,8 @@
     "type": "git",
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup.git"
   },
-  "type": "module",
   "scripts": {
+    "build": "vite build",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "tsc"

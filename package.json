@@ -6,8 +6,9 @@
   "author": "dipsaus9",
   "license": "MIT",
   "scripts": {
-    "dev": "turbo run dev --filter=docs",
-    "build": "turbo run build --filter=docs",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "build:packages": "turbo run --filter=./packages/**/* build",
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "test": "turbo run test",

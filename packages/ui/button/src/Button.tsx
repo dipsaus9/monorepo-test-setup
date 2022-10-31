@@ -7,7 +7,7 @@ export function Button({
   ...props
 }: ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
-    <button className={`${className} text-primary`} {...props} type={type}>
+    <button className={`${className} text-secondary`} {...props} type={type}>
       {children}
     </button>
   )
