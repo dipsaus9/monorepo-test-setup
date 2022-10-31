@@ -130,13 +130,14 @@ module.exports = {
         "cypress/globals": true,
       },
       rules: {
-        "@typescript-eslint/no-unused-expressions": "off"
+        "@typescript-eslint/no-unused-expressions": "off",
       },
     },
     {
       files: [
         "**/*/vite.config.ts",
         "**/*/postcss.config.cjs",
+        "**/*/tailwind.config.cjs",
       ],
       parserOptions: {
         project: "tsconfig.node.json",

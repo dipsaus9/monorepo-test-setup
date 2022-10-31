@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "author": "dipsaus",
   "description": "Button component",
-  "main": "dist/button.js",
-  "module": "dist/button.js",
+  "exports": {
+    ".": "./dist/button.js"
+  },
+  "types": "./src/main.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -18,7 +20,6 @@
     "lint:fix": "eslint ./src --fix",
     "test": "tsc"
   },
-  "types": "src/main.ts",
   "bugs": {
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup/issues"
   },

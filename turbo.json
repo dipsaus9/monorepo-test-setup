@@ -1,9 +1,14 @@
 {
   "$schema": "https://turborepo.org/schema.json",
   "pipeline": {
+    "dev": {},
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".dist/**"]
+    },
+    "@dipsaus9/docs#build": {
+      "inputs": ["../../**/src/**/*.stories.*"],
+      "outputs": ["storybook-static"]
     },
     "build:watch": {
       "outputs": [".dist/**"]
