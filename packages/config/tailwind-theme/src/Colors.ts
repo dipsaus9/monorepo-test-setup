@@ -1,7 +1,7 @@
 /* eslint-disable no-restricted-syntax */
 import kebabCase from "lodash.kebabcase"
 
-import * as colors from "@dipsaus9/design-tokens/dist/colors"
+import * as colors from "@dipsaus9/design-tokens/colors"
 
 const formattedColors: Record<string, string> = {}
 

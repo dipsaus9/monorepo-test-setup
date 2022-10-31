@@ -5,11 +5,11 @@
   "description": "Design tokens",
   "type": "module",
   "exports": {
-    "./dist/*": "./dist/*"
+    "./*": "./dist/*"
   },
   "typesVersions": {
     "*": {
-      "dist/*": [
+      "*": [
         "./dist/*"
       ]
     }
