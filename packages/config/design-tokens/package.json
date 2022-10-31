@@ -4,13 +4,14 @@
   "author": "dipsaus",
   "description": "Design tokens",
   "type": "module",
-  "main": "./src/main.js",
-  "module": "./src/main.js",
-  "types": "./src/main.d.ts",
   "exports": {
-    ".": {
-      "import": "./src/main.js",
-      "require": "./src/main.js"
+    "./dist/*": "./dist/*"
+  },
+  "typesVersions": {
+    "*": {
+      "dist/*": [
+        "./dist/*"
+      ]
     }
   },
   "license": "MIT",
@@ -19,7 +20,7 @@
     "url": "git+https://github.com/dipsaus9/monorepo-test-setup.git"
   },
   "scripts": {
-    "build": "style-dictionary build --config ./design-tokens.config.json && pnpm run lint:fix",
+    "build": "style-dictionary build --config ./design-tokens.config.json",
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
     "test": "tsc"
