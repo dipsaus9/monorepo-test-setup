@@ -1,0 +1,11 @@
+{
+  "H1": {
+    "value": {
+      "fontFamily": "{font-primary}",
+      "fontWeight": "{bold}",
+      "lineHeight": "{lineheight.05}",
+      "fontSize": "{fontsize.800}"
+    },
+    "type": "typography"
+  }
+}

@@ -1,6 +1,6 @@
 /* eslint-disable import/no-unresolved */
 const {
-  Theme: { Colors },
+  GammaTheme: { Colors },
 } = require("@dipsaus9/tailwind-theme")
 
 /** @type {import('tailwindcss').Config} */

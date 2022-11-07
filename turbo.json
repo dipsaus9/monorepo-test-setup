@@ -7,7 +7,7 @@
     },
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["src/**/*.tsx", "src/**/*.ts"],
+      "inputs": ["src/**/*.tsx", "src/**/*.ts", "src/tokens/**/*.json", "design-tokens.config.*.json", "sd.config.cjs"],
       "outputs": ["./dist/**"]
     },
     "@dipsaus9/docs#build": {
