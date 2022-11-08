@@ -1,6 +1,6 @@
 {
   "name": "@dipsaus9/title",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "dipsaus",
   "description": "Title component",
   "main": "./src/main",
