@@ -1,5 +1,11 @@
 # @dipsaus9/button
 
+## 2.0.2
+
+### Patch Changes
+
+- be4ea37: fix: Small color update
+
 ## 2.0.1
 
 ### Patch Changes
