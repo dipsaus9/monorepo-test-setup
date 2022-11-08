@@ -1,6 +1,6 @@
 {
   "name": "@dipsaus9/button",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "dipsaus",
   "description": "Button component",
   "type": "module",
@@ -42,6 +42,6 @@
     "postcss": "^8.4.18"
   },
   "peerDependencies": {
-     "react": "^18.2.0"
+    "react": "^18.2.0"
   }
 }
