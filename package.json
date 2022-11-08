@@ -13,6 +13,7 @@
     "lint": "turbo run lint",
     "lint:fix": "turbo run lint:fix",
     "test": "turbo run test",
+    "changeset": "changeset",
     "version": "changeset version",
     "cleanup": "rm -rf packages/**/*/node_modules && rm -rf packages/*/dist && rm -rf node_modules && rm -f pnpm-lock.yaml",
     "cy:open": "cypress open --component",
