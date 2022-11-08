@@ -1,5 +1,12 @@
 # @dipsaus9/title
 
+## 2.0.2
+
+### Patch Changes
+
+- Updated dependencies [be4ea37]
+  - @dipsaus9/button@2.0.2
+
 ## 2.0.1
 
 ### Patch Changes
