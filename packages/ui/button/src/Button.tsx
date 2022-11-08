@@ -7,7 +7,7 @@ export function Button({
   ...props
 }: ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
-    <button className={`${className} text-colors`} {...props} type={type}>
+    <button className={`${className} text-color-red`} {...props} type={type}>
       {children}
     </button>
   )
